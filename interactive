@@ -48,6 +48,10 @@ char query(int a,int b,int c,int d)
 	fflush(stdout);
 	return x;
 }
+void prnt(ll x){
+    cout<<"! "<<x<<endl;
+    exit(0);
+}
 void solve()
 {
 }
