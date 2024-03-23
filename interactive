@@ -39,6 +39,15 @@ int uid(int l, int r) {return uniform_int_distribution<int>(l, r)(rng);}
 #define pre(pref,v) for(int i = 0;i<v.size();i++) { pref.push_back(v[i]); if(i>=1) pref[i]+=pref[i-1];}
 #define suf(suff,v) for(int i = 0;i<v.size();i++) {suff.push_back(v[i]); } for(int i=v.size()-2;i>=0;i--){ suff[i]+=suff[i+1];}
 #define read(v,n) for(int i = 0;i<n;i++){ int p; cin>>p; v.push_back(p);}
+char query(int a,int b,int c,int d)
+{
+	char x;
+	printf("? %d %d %d %d\n",a,b,c,d);
+	fflush(stdout);
+	cin>>x;
+	fflush(stdout);
+	return x;
+}
 void solve()
 {
 }
